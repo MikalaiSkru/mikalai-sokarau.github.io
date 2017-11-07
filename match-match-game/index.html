@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Match-Match Game</title>
+    <script src="bundle.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="options">
+            <button class="options-button">New game</button>
+        </div>
+        <div>
+            <span class="timer">0:00</span>
+        </div>
+    </header>
+    <main>
+        <section class="active container game-view">
+            <div class="game-board-wrapper">
+                <div class="rules-wrapper">
+                    <div class="instruction">
+                        <h2>How to play:</h2>
+                        <p>Match-match game is a counter game where the object is to find all the pairs.</p>
+                        <p>When the game begins, all pictures are hidden.</p>
+                    </div>
+                    <div class="rules">
+                        <h2>Rules:</h2>
+                        <ol>
+                            <li>Select a card and try to find a pair to it</li>
+                            <li>If you match the pictures you can choose again.</li>
+                            <li>If they don't match, the computer will turn them.</li>
+                            <li>The player that finds all the pairs wins!</li>
+                            <li>Good luck and have fun!</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container options-view">
+            <div>
+                <p>Choose your difficulty:</p>
+                <div class="difficulty">
+                    <button data-difficulty="3">Low</button>
+                    <button data-difficulty="6" class="chosen">Medium</button>
+                    <button data-difficulty="9">High</button>
+                </div>
+            </div>
+            <div>
+                <p>Choose your card back:</p>
+                <figure>
+                    <div class="card-container blur">
+                        <div class="card-full">
+                            <div data-cardBack="card-back-eyes" class="card card-back-eyes">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container blur">
+                        <div class="card-full">
+                            <div data-cardback="card-back-abstraction"
+                                 class="card card-back-abstraction">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div data-cardback="card-back-circles"
+                                 class="card card-back-circles">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container blur">
+                        <div class="card-full">
+                            <div data-cardback="card-back-dark"
+                                 class="card card-back-dark">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container blur">
+                        <div class="card-full">
+                            <div data-cardback="card-back-confusion"
+                                 class="card card-back-confusion">
+                            </div>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <button class="save-button">Start</button>
+        </section>
+        <section class="container score-view">
+            <p>Congratulations! You have found all the pairs in <span
+                    class="finish-time"></span></p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/MikalaiSkru" target="_blank">Mikalai Sokarau 2017</a>
+    </footer>
+</div>
+</body>
+</html>

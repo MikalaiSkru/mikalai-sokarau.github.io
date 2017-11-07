@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-image:url(../images/background.jpg);
+    font: 10px Colibri Helvetica sans-serif;
+    box-sizing: border-box;
+}
+
+header > div {
+    display: inline-block;
+}
+
+header > div:last-child {
+    width: 100px;
+    height: 50px;
+    float: right;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10%;
+    line-height: 50px;
+}
+
+
+.wrapper {
+    min-width: 1250px;
+    margin: 20px 20px 0 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+}
+
+main > section:not(.active) {
+    display: none;
+}
+
+.rules-wrapper {
+    border: 1px solid white;
+    color: white;
+    font-size: 2.5em;
+    padding: 20px 50px;
+    border-radius: 1%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.rules-wrapper h2 {
+    padding: 5px;
+    text-align: center;
+}
+
+.rules-wrapper ol {
+    list-style-position: inside;
+}
+
+.rules {
+    margin-top: 30px;
+}
+
+footer {
+    font-size: 1.5em;
+    display: block;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    color: red;
+}
+
+.game-board {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.game-board-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.score-view {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    /* background-color: white; */
+    border-radius: 2%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid white;
+    line-height: 100px;
+}
+
+.score-view > span {
+    font-size: 0.7em;
+    padding: 7px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.options-view {
+    width: 1200px;
+    height: 500px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    border-radius: 1%;
+    padding-top: 20px;
+}
+
+.options-view button {
+    box-sizing: border-box;
+    outline: none;
+    background-color: transparent;
+    font-size: 0.7em;
+    padding: 7px 15px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.options-view > div:first-child {
+    margin-bottom: 30px;
+}
+
+.options-view > div p {
+    margin-bottom: 5px;
+}
+
+.chosen {
+    border: 1px solid white;
+}
+
+.options-view button:not(.chosen):hover {
+    color: red;
+}
+
+.options-view button:not(.chosen) {
+    border: 1px solid transparent;
+}
+
+.options-view .card-container:hover {
+    transform: scale(1);
+    filter: grayscale(0);
+}
+
+.blur {
+    transform: scale(0.95);
+    filter: grayscale(100%);
+}
+
+
+/*----------------------------------------------- options */
+.options {
+    position: relative;
+    display: inline-block;
+}
+
+.options-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8%;
+    border: 1px solid white;
+    color: white;
+    padding: 16px;
+    font-size: 2em;
+    cursor: pointer;
+    width: 140px;
+    outline: none;
+}
+
+.options:hover .options-button {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*--------------------------------------------------------------------- cards */
+
+.card {
+    background: url('../images/cards-sprite.png') no-repeat;
+    width: 200px;
+    height: 281px;
+    border-radius: 4%;
+
+    position: absolute;
+}
+
+.card-container {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 281px;
+    z-index: 1;
+    perspective: 1000px;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+.card-full {
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.2s linear;
+}
+
+.face {
+    transform: rotateY(180deg);
+}
+
+.flip-animation {
+    transform: rotateY(180deg);
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.4s;
+    backface-visibility: visible;
+    pointer-events: none;
+}
+
+/* ---------------------------------------------- background position indexes */
+.card-back-eyes {
+    background-position: -5px -0px;
+}
+
+.card-back-abstraction {
+    background-position: -210px -0px;
+}
+
+.card-back-circles {
+    background-position: -415px -0px;
+}
+
+.card-back-dark {
+    background-position: -620px -0px;
+}
+
+.card-back-confusion {
+    background-position: -825px -0px;
+}
+
+.clubs-02 {
+    background-position: -1030px -0px;
+}
+
+.clubs-03 {
+    background-position: -1235px -0px;
+}
+
+.clubs-04 {
+    background-position: -5px -286px;
+}
+
+.clubs-05 {
+    background-position: -210px -286px;
+}
+
+.clubs-06 {
+    background-position: -415px -286px;
+}
+
+.clubs-07 {
+    background-position: -620px -286px;
+}
+
+.clubs-08 {
+    background-position: -825px -286px;
+}
+
+.clubs-09 {
+    background-position: -1030px -286px;
+}
+
+.clubs-10 {
+    background-position: -1235px -286px;
+}
+
+.clubs-ace {
+    background-position: -5px -572px;
+}
+
+.clubs-jack {
+    background-position: -210px -572px;
+}
+
+.clubs-king {
+    background-position: -415px -572px;
+}
+
+.clubs-queen {
+    background-position: -620px -572px;
+}
+
+.diamonds-02 {
+    background-position: -825px -572px;
+}
+
+.diamonds-03 {
+    background-position: -1030px -572px;
+}
+
+.diamonds-04 {
+    background-position: -1235px -572px;
+}
+
+.diamonds-05 {
+    background-position: -5px -858px;
+}
+
+.diamonds-06 {
+    background-position: -210px -858px;
+}
+
+.diamonds-07 {
+    background-position: -415px -858px;
+}
+
+.diamonds-08 {
+    background-position: -620px -858px;
+}
+
+.diamonds-09 {
+    background-position: -825px -858px;
+}
+
+.diamonds-10 {
+    background-position: -1030px -858px;
+}
+
+.diamonds-ace {
+    background-position: -1235px -858px;
+}
+
+.diamonds-jack {
+    background-position: -5px -1144px;
+}
+
+.diamonds-king {
+    background-position: -210px -1144px;
+}
+
+.diamonds-queen {
+    background-position: -415px -1144px;
+}
+
+.hearts-02 {
+    background-position: -620px -1144px;
+}
+
+.hearts-03 {
+    background-position: -825px -1144px;
+}
+
+.hearts-04 {
+    background-position: -1030px -1144px;
+}
+
+.hearts-05 {
+    background-position: -1235px -1144px;
+}
+
+.hearts-06 {
+    background-position: -5px -1430px;
+}
+
+.hearts-07 {
+    background-position: -210px -1430px;
+}
+
+.hearts-08 {
+    background-position: -415px -1430px;
+}
+
+.hearts-09 {
+    background-position: -620px -1430px;
+}
+
+.hearts-10 {
+    background-position: -825px -1430px;
+}
+
+.hearts-ace {
+    background-position: -1030px -1430px;
+}
+
+.hearts-jack {
+    background-position: -1235px -1430px;
+}
+
+.hearts-king {
+    background-position: -5px -1716px;
+}
+
+.hearts-queen {
+    background-position: -210px -1716px;
+}
+
+.joker-black {
+    background-position: -415px -1716px;
+}
+
+.joker-red {
+    background-position: -620px -1716px;
+}
+
+.spades-02 {
+    background-position: -825px -1716px;
+}
+
+.spades-03 {
+    background-position: -1030px -1716px;
+}
+
+.spades-04 {
+    background-position: -1235px -1716px;
+}
+
+.spades-05 {
+    background-position: -5px -2002px;
+}
+
+.spades-06 {
+    background-position: -210px -2002px;
+}
+
+.spades-07 {
+    background-position: -415px -2002px;
+}
+
+.spades-08 {
+    background-position: -620px -2002px;
+}
+
+.spades-09 {
+    background-position: -825px -2002px;
+}
+
+.spades-10 {
+    background-position: -1030px -2002px;
+}
+
+.spades-ace {
+    background-position: -1235px -2002px;
+}
+
+.spades-jack {
+    background-position: -5px -2288px;
+}
+
+.spades-king {
+    background-position: -210px -2288px;
+}
+
+.spades-queen {
+    background-position: -415px -2288px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Match-Match Game</title>
+    <script src="bundle.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Options</button>
+        </div>
+        <div>
+            <span>0:00</span>
+        </div>
+    </header>
+    <main>
+        <section class="active container game-view">
+            <div class="game-board-wrapper">
+                <figure class="game-board">
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="front face card card-back-01">
+                            </div>
+                            <div class="back face card clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="front face card card-back-01">
+                            </div>
+                            <div class="back face card clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card-full">
+                            <div class="card front face card-back-01">
+                            </div>
+                            <div class="card back face clubs-02">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="card card-back-02"></div>-->
+                    <!--<div class="card card-back-03"></div>-->
+                    <!--<div class="card card-back-04"></div>-->
+                    <!--<div class="card card-back-05"></div>-->
+                    <!--<div class="card clubs-02"></div>-->
+                    <!--<div class="card clubs-03"></div>-->
+                    <!--<div class="card clubs-04"></div>-->
+                    <!--<div class="card clubs-05"></div>-->
+                    <!--<div class="card clubs-06"></div>-->
+                </figure>
+            </div>
+        </section>
+        <section class="container options-view">
+            <div>
+                <p>Choose your difficulty:</p>
+                <div>
+                    <span>Low</span>
+                    <span>Medium</span>
+                    <span>High</span>
+                </div>
+            </div>
+            <div>
+                <p>Choose your card back:</p>
+                <figure>
+                    <div class="card card-back-01"></div>
+                    <div class="card card-back-02"></div>
+                    <div class="card card-back-03"></div>
+                    <div class="card card-back-04"></div>
+                    <div class="card card-back-05"></div>
+                </figure>
+            </div>
+            <span>Save</span>
+        </section>
+        <section class="container score-view">
+            <article>Congratulations! You found all pairs in 1:59!</article>
+            <button>Thanks!</button>
+        </section>
+
+
+        <!--<div class="card clubs-02"></div>-->
+        <!--<div class="card clubs-03"></div>-->
+        <!--<div class="card clubs-04"></div>-->
+        <!--<div class="card clubs-05"></div>-->
+        <!--<div class="card clubs-06"></div>-->
+        <!--<div class="card clubs-07"></div>-->
+        <!--<div class="card clubs-08"></div>-->
+        <!--<div class="card clubs-09"></div>-->
+        <!--<div class="card clubs-10"></div>-->
+        <!--<div class="card clubs-ace"></div>-->
+        <!--<div class="card clubs-jack"></div>-->
+        <!--<div class="card clubs-king"></div>-->
+        <!--<div class="card clubs-queen"></div>-->
+        <!--<div class="card diamonds-02"></div>-->
+        <!--<div class="card diamonds-03"></div>-->
+        <!--<div class="card diamonds-04"></div>-->
+        <!--<div class="card diamonds-05"></div>-->
+        <!--<div class="card diamonds-06"></div>-->
+        <!--<div class="card diamonds-07"></div>-->
+        <!--<div class="card diamonds-08"></div>-->
+        <!--<div class="card diamonds-09"></div>-->
+        <!--<div class="card diamonds-10"></div>-->
+        <!--<div class="card diamonds-ace"></div>-->
+        <!--<div class="card diamonds-jack"></div>-->
+        <!--<div class="card diamonds-king"></div>-->
+        <!--<div class="card diamonds-queen"></div>-->
+        <!--<div class="card hearts-02"></div>-->
+        <!--<div class="card hearts-03"></div>-->
+        <!--<div class="card hearts-04"></div>-->
+        <!--<div class="card hearts-05"></div>-->
+        <!--<div class="card hearts-06"></div>-->
+        <!--<div class="card hearts-07"></div>-->
+        <!--<div class="card hearts-08"></div>-->
+        <!--<div class="card hearts-09"></div>-->
+        <!--<div class="card hearts-10"></div>-->
+        <!--<div class="card hearts-ace"></div>-->
+        <!--<div class="card hearts-jack"></div>-->
+        <!--<div class="card hearts-king"></div>-->
+        <!--<div class="card hearts-queen"></div>-->
+        <!--<div class="card joker-black"></div>-->
+        <!--<div class="card joker-red"></div>-->
+        <!--<div class="card spades-02"></div>-->
+        <!--<div class="card spades-03"></div>-->
+        <!--<div class="card spades-04"></div>-->
+        <!--<div class="card spades-05"></div>-->
+        <!--<div class="card spades-06"></div>-->
+        <!--<div class="card spades-07"></div>-->
+        <!--<div class="card spades-08"></div>-->
+        <!--<div class="card spades-09"></div>-->
+        <!--<div class="card spades-10"></div>-->
+        <!--<div class="card spades-ace"></div>-->
+        <!--<div class="card spades-jack"></div>-->
+        <!--<div class="card spades-king"></div>-->
+        <!--<div class="card spades-queen"></div>-->
+    </main>
+    <footer>
+        Mikalai Sokarau 2017
+    </footer>
+</div>
+</body>
+</html>
